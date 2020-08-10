@@ -1,0 +1,97 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+#nav {
+    background-color: rgb(105, 132, 189);
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    z-index: 1;
+}
+#logo {
+    height: 50px;
+    margin: 10px;
+}
+.nav-text {
+    color: white;
+    margin-left: 20px;
+}
+#name {
+    width: 400px;
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 210px;
+    max-width: 210px;
+    min-height: 86vh;
+    display: flex;
+}
+#sidebar.active {
+    margin-left: -210px;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -210px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+#sidebarCollapse {
+    margin: 30px;
+}
+#editBox {
+    background-color: rgb(121, 142, 187);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#input {
+    padding: 5px;
+    margin: 2px;
+}
+#department {
+    width: 190px;
+}
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn {
+    margin: 0px 1px 0px 1px;
+}
+#main {
+    margin: 5px 5px 5px 15px;
+}
+h2 {
+    width: 350px;
+}
+#populate {
+    display: none;
+    margin-left: 5px;
+}
+#list {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#card {
+    background-color: rgb(236, 236, 34);
+    width: 350px;
+    padding: 5px;
+    margin: 3px;
+}

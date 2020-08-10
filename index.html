@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Company Directory</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
+<body>
+
+        <nav id="nav">
+            <img id='logo' src="./images/logo.png">
+            <h3 class='nav-text' id="name">COMPANY NAME</h3>
+            <button id="sidebarCollapse" class="btn btn-secondary">Employees</button>
+        </nav>
+
+        <div class="wrapper">
+
+            <nav id="sidebar">
+                <div id='editBox'>
+                    <form id='input'>
+                        <div id='inputData'>
+                            <p>First name: </p>
+                            <input id='firstName' name='firstName' type="text" required>
+                            <p>Last name:</p>
+                            <input id='lastName' name='lastName' type="text" required>
+                            <p>Email:</p>
+                            <input id='email' name='email' type="email" required>
+                            <p>Department:</p>
+                            <select id='department' name='departmentID'></select>
+                            <p>New ID number:</p>
+                        </div>
+                        <div id='buttons'>
+                            <button type='submit' class="btn btn-primary" onclick="addContact()">New</button>
+                            <button class="btn btn-primary" onclick="updateContact()">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <div id='main'>
+                <button id="populate" class="btn btn-secondary" onclick="populateCards()">Show Contacts</button>
+                <div id='list'></div>
+            </div>
+        </div>  
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
